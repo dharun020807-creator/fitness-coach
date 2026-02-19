@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerFit Coach</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(to right,#ff512f,#dd2476);
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* NAVIGATION */
+nav{
+    background:#000;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff512f;
+}
+
+/* SECTION */
+section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+#home{
+    background:url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1") no-repeat center/cover;
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.btn{
+    background:#ff512f;
+    border:none;
+    padding:12px 25px;
+    color:white;
+    margin-top:20px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#dd2476;
+}
+
+/* SERVICES BOX */
+.services-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.box{
+    background:#222;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+}
+
+/* GALLERY */
+.gallery img{
+    width:250px;
+    margin:10px;
+    border-radius:10px;
+}
+
+/* CONTACT */
+input, textarea{
+    width:250px;
+    padding:10px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+}
+
+footer{
+    background:#000;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>PowerFit Coaching</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+<h1>Train Hard. Stay Fit.</h1>
+<p>Your transformation starts today.</p>
+<button class="btn">Join Now</button>
+<p id="message"></p>
+</section>
+
+<script>
+    function showMessage() 
+    {
+        document.getElementById("message").innerText="Thank you for your interest! We will contact you soon.";
+    }
+</script>
+
+
+<section id="about">
+<h2>About Coach</h2>
+<p>Certified fitness trainer with 10+ years experience in body transformation, strength training and fat loss programs. commonly known as Coach, is an Coimbatore luxury fashion house headquartered in Coimbatore City specializing in handbags, luggage, and accessories, as well as ready-to-wear. Coach licenses its name and branding to Luxottica for eyewear,[4] and Paris-based Interparfums for fragrances.[5] Stuart Vevers has been the executive creative director since June of[6] 2013.</p>
+</section>
+
+<section id="services">
+<h2>Our Programs</h2>
+<div class="services-container">
+<div class="box">Personal Training</div>
+<div class="box">Weight Loss</div>
+<div class="box">Muscle Gain</div>
+<div class="box">Online Coaching</div>
+</div>
+</section>
+
+<section id="gallery" class="gallery">
+<h2>Gallery</h2>
+<img src="C:\Users\ELCOT\Desktop\nm\img.jpeg">
+<img src="C:\Users\ELCOT\Desktop\nm\img1.jpeg">
+<img src="C:\Users\ELCOT\Desktop\nm\img2.jpeg">
+<img src="C:\Users\ELCOT\Desktop\nm\img3.jpeg">
+
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Your Email"><br>
+<textarea rows="4" placeholder="Message"></textarea><br>
+<button class
+<footer>
+    <p>&copy; 2026 F2F GYM. All rights reserved.</p>
+</footer>
